@@ -3,7 +3,8 @@ import pandas as pd
 df = pd.read_csv("attacks_clear.csv", encoding = "ISO-8859-1")
 print(df.head())
 
-print(df['Species '].value_counts())
+print(df['Species '].value_counts()[:50])
+
 
 from sklearn.preprocessing import OrdinalEncoder
 
